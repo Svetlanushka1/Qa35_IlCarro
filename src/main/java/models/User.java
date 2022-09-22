@@ -1,5 +1,6 @@
-public class User {
+package models;
 
+public class User {
     private String name;
     private String lastname;
     private String email;
@@ -51,14 +52,5 @@ public class User {
         return phone;
     }
 
-    @Override
-    public String toString() {
-        return "User{" +
-                "name='" + name + '\'' +
-                ", lastname='" + lastname + '\'' +
-                ", email='" + email + '\'' +
-                ", password='" + password + '\'' +
-                ", phone='" + phone + '\'' +
-                '}';
-    }
+
 }

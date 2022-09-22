@@ -1,5 +1,6 @@
 package manager;
 
+import models.User;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -28,7 +29,10 @@ public class HelperUser extends HelperBase{
         type(By.id("email"),email);
         type(By.id("password"),password);
     }
-
+    public void fillLoginForm(User user) {
+        type(By.id("email"), user.getEmail());
+        type(By.id("password"), user.getPassword());
+    }
 
     public String getMessage() {
       //pause(3000);
