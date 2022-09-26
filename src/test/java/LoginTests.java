@@ -12,10 +12,11 @@ public class LoginTests extends TestBase{
 
     @BeforeMethod
     public void preCondition(){
-        if(app.getHelperUser().isLogged()){
-        //if(app.getHelperUser().isElementPresent(By.xpath("//a"))){
+        if(app.getHelperUser().isLogged())
+            //if(app.getHelperUser().isElementPresent(By.xpath("//a"))){
             app.getHelperUser().logout();
-        }
+
+
     }
     @Test
     public void loginSuccess(){
@@ -32,7 +33,7 @@ public class LoginTests extends TestBase{
 
         User user=new User().withEmail("noa@gmail.com").withPassword("Nnoa12345$");
 
-        app.getHelperUser().openLoginFormHeader();
+        app.getHelperUser().openLoginFormFooter();
         app.getHelperUser().fillLoginForm(user);
         app.getHelperUser().submit();
 
@@ -48,7 +49,9 @@ public class LoginTests extends TestBase{
         app.getHelperUser().fillLoginForm(user);
         app.getHelperUser().submit();
         // Assert errorMessagge
+        Assert.assertEquals(app.getHelperUser().getErrorText(),"It'snot look like email");
         // Assert buttonYalla not active
+        Assert.assertTrue(app.getHelperUser().isYallaButtonNotActive());
     }
     @Test
     public void negativeWrongPassword(){
@@ -57,13 +60,16 @@ public class LoginTests extends TestBase{
         app.getHelperUser().openLoginFormHeader();
         app.getHelperUser().fillLoginForm(user);
         app.getHelperUser().submit();
+        Assert.assertEquals(app.getHelperUser().getMessage(),"Wrong email or password");
         // Assert text message "Authorization error"
+        Assert.assertEquals(app.getHelperUser().getTitleMessage(),"Authorization error");
 
     }
 
 
     @AfterMethod
     public void postCondition(){
+
         app.getHelperUser().clickOkButton();
     }
 }
