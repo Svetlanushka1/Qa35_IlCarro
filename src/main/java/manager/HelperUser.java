@@ -104,6 +104,5 @@ public class HelperUser extends HelperBase{
         Actions actions = new Actions(wd);
         actions.moveToElement(label,-xOffsSet,0).click().release().perform();
 
-
     }
 }
