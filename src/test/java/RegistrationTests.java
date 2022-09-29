@@ -13,7 +13,7 @@ public class RegistrationTests extends TestBase{
 
     }
 
-    @Test
+    @Test(enabled = false,description = "Bug Jira 00012")
     public void  registrationSuccess(){
         System.out.println( System.currentTimeMillis());
         int i =(int) (System.currentTimeMillis()/1000)%3600;
