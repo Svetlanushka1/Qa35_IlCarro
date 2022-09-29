@@ -105,4 +105,11 @@ public class HelperUser extends HelperBase{
         actions.moveToElement(label,-xOffsSet,0).click().release().perform();
 
     }
+
+    public void login(User user) {
+        openLoginFormHeader();
+        fillLoginForm(user);
+        submit();
+        clickOkButton();
+    }
 }
