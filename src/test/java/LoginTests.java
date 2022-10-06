@@ -12,19 +12,23 @@ public class LoginTests extends TestBase{
 
     @BeforeMethod
     public void preCondition(){
-        if(app.getHelperUser().isLogged())
+        if(app.getHelperUser().isLogged()) {
             //if(app.getHelperUser().isElementPresent(By.xpath("//a"))){
             app.getHelperUser().logout();
+            logger.info("The logout was needed ");
+        }
 
 
     }
     @Test
     public void loginSuccess(){
+        logger.info("Login scenario success was used data email:'noa@gmail.com' & password: 'Nnoa12345$'");
       app.getHelperUser().openLoginFormHeader();
       app.getHelperUser().fillLoginForm("noa@gmail.com","Nnoa12345$");
       app.getHelperUser().submit();
 
         Assert.assertEquals(app.getHelperUser().getMessage(),"Logged in success");
+        logger.info("In assert checked message 'Logged in success' in dialog  ");
     }
 
     @Test
@@ -32,19 +36,20 @@ public class LoginTests extends TestBase{
 
 
         User user=new User().withEmail("noa@gmail.com").withPassword("Nnoa12345$");
-
+        logger.info("Login scenario success was used data"+user.toString());
         app.getHelperUser().openLoginFormFooter();
         app.getHelperUser().fillLoginForm(user);
         app.getHelperUser().submit();
 
         Assert.assertEquals(app.getHelperUser().getMessage(),"Logged in success");
+        logger.info("In assert checked message 'Logged in success' in dialog  ");
     }
 
     @Test
     public void negativeWrongEmail(){
 
         User user=new User().withEmail("noagmail.com").withPassword("Nnoa12345$");
-
+        logger.info("Login negative scenario with wrong email was used data"+user.toString());
         app.getHelperUser().openLoginFormHeader();
         app.getHelperUser().fillLoginForm(user);
         app.getHelperUser().submit();
@@ -52,11 +57,12 @@ public class LoginTests extends TestBase{
         Assert.assertEquals(app.getHelperUser().getErrorText(),"It'snot look like email");
         // Assert buttonYalla not active
         Assert.assertTrue(app.getHelperUser().isYallaButtonNotActive());
+        logger.info("In assert checked error message 'It'snot look like email' under name field ");
     }
     @Test
     public void negativeWrongPassword(){
         User user=new User().withEmail("noa@gmail.com").withPassword("Wwow12345$");
-
+        logger.info("Login negative scenario with wrong passeord was used data"+user.toString());
         app.getHelperUser().openLoginFormHeader();
         app.getHelperUser().fillLoginForm(user);
         app.getHelperUser().submit();
@@ -64,6 +70,7 @@ public class LoginTests extends TestBase{
         // Assert text message "Authorization error"
         Assert.assertEquals(app.getHelperUser().getTitleMessage(),"Authorization error");
 
+        logger.info("In assert checked message 'Authorization error' & 'Wrong email or password' in dialog  ");
     }
 
 
@@ -71,5 +78,6 @@ public class LoginTests extends TestBase{
     public void postCondition(){
 
         app.getHelperUser().clickOkButton();
+
     }
 }

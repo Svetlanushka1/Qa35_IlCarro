@@ -10,6 +10,7 @@ public class RegistrationTests extends TestBase{
     public void preCondition(){
         if(app.getHelperUser().isLogged())
             app.getHelperUser().logout();
+        logger.info("The logout was needed ");
 
     }
 
@@ -18,22 +19,25 @@ public class RegistrationTests extends TestBase{
         System.out.println( System.currentTimeMillis());
         int i =(int) (System.currentTimeMillis()/1000)%3600;
         User user = new User().withName("Lisa").withLastname("Snow").withEmail("lis"+i+"@mail.com").withPassword("Ww12345$");
-
+        logger.info("Login scenario success was used data"+user.toString());
         app.getHelperUser().openRegistrationFormHeader();
         app.getHelperUser().fillRegistrationForm(user);
         app.getHelperUser().checkPolicyXY();
         app.getHelperUser().submit();
         Assert.assertEquals(app.getHelperUser().getTitleMessage(),"Registered");
+        logger.info("In assert checked message 'Registered' in dialog  ");
 
     }
     @Test
     public void registrationWrongPassword(){
         User user = new User().withName("Lila").withLastname("Snow").withEmail("lila@mail.com").withPassword("Lila");
+        logger.info("Login negative scenario with wrong password was used data"+user.toString());
         app.getHelperUser().openRegistrationFormHeader();
         app.getHelperUser().fillRegistrationForm(user);
         app.getHelperUser().checkPolicyXY();
         app.getHelperUser().submit();
         Assert.assertTrue(app.getHelperUser().isYallaButtonNotActive());
+        logger.info("The Y'alla button was not active");
     }
 
 

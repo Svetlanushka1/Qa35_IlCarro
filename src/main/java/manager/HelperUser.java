@@ -57,6 +57,7 @@ public class HelperUser extends HelperBase{
     public void clickOkButton() {
         if(isElementPresent(By.xpath("//button[text()='Ok']")))
         click(By.xpath("//button[text()='Ok']"));
+        logger.info("Click OK button was needed");
     }
 
     public String  getErrorText() {
