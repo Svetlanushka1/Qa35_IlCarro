@@ -1,10 +1,12 @@
+import manager.DataProviderUser;
 import models.User;
 import org.openqa.selenium.By;
 import org.testng.Assert;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
 
 public class LoginTests extends TestBase{
 
@@ -20,16 +22,32 @@ public class LoginTests extends TestBase{
 
 
     }
-    @Test
-    public void loginSuccess(){
-        logger.info("Login scenario success was used data email:'noa@gmail.com' & password: 'Nnoa12345$'");
+    @Test (dataProvider = "datalogin",dataProviderClass = DataProviderUser.class)
+    public void loginSuccess(String email,String password){
+        logger.info("Login scenario success was used data email: " +email+" & password: " +password);
+
+
       app.getHelperUser().openLoginFormHeader();
-      app.getHelperUser().fillLoginForm("noa@gmail.com","Nnoa12345$");
+      app.getHelperUser().fillLoginForm(email,password);
       app.getHelperUser().submit();
 
         Assert.assertEquals(app.getHelperUser().getMessage(),"Logged in success");
         logger.info("In assert checked message 'Logged in success' in dialog  ");
     }
+
+
+    @Test(dataProvider = "dataModelUser",dataProviderClass = DataProviderUser.class)
+    public void loginSuccessModelsDP(User user){
+
+        logger.info("Login scenario success was used data"+user.toString());
+        app.getHelperUser().openLoginFormFooter();
+        app.getHelperUser().fillLoginForm(user);
+        app.getHelperUser().submit();
+
+        Assert.assertEquals(app.getHelperUser().getMessage(),"Logged in success");
+        logger.info("In assert checked message 'Logged in success' in dialog  ");
+    }
+
 
     @Test
     public void loginSuccessModels(){
