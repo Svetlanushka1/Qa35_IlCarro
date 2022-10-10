@@ -1,0 +1,26 @@
+18:03:22.542  INFO  manager.ApplicationManager - All tests start in  ChromeDriver
+18:03:25.776  INFO  manager.ApplicationManager - The current url is --->https://ilcarro-1578153671498.web.app/search
+18:03:25.822  INFO  TestBase - Start Method with name --->loginSuccess
+18:03:25.825  INFO  manager.ListenerWD - Before Find Elements By -->By.xpath: //a[text()=' Logout ']
+18:03:30.852  INFO  manager.ListenerWD - After Find Elements By -->By.xpath: //a[text()=' Logout ']
+18:03:30.856  INFO  manager.ListenerWD - List size is -->0
+18:03:30.859  INFO  TestBase - Login scenario success was used data email:'noa@gmail.com' & password: 'Nnoa12345$'
+18:03:30.860  INFO  manager.ListenerWD - Before Find Element By -->By.cssSelector: a[href ='/lo']
+18:03:35.935  INFO  manager.ListenerWD - We have a 'problem'
+18:03:35.937  INFO  manager.ListenerWD - The name of error method  findElement
+18:03:35.963  INFO  manager.ListenerWD - Describe of error org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"a[href ='/lo']"}
+  (Session info: chrome=106.0.5249.61)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'MacBook-Pro-Taya.local', ip: 'fe80:0:0:0:14ae:7e65:21b6:47a1%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.6.5', java.version: '11.0.15.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6cae7b4522c1b03db6ecc2574f3fa74c, findElement {using=css selector, value=a[href ='/lo']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.61, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: /var/folders/s_/hl4vhy0959g...}, goog:chromeOptions: {debuggerAddress: localhost:56345}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:56345/devtoo..., se:cdpVersion: 106.0.5249.61, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 6cae7b4522c1b03db6ecc2574f3fa74c
+18:03:35.964  INFO  manager.ListenerWD - *********************
+18:03:35.965  INFO  manager.ListenerWD - ChromeDriver: chrome on MAC (6cae7b4522c1b03db6ecc2574f3fa74c)
+18:03:36.047  INFO  manager.ListenerWD - Screen with error is  1059 ****src/test/screenshots/screen1059.png
+18:03:38.632  INFO  manager.ListenerWD - Before Find Elements By -->By.xpath: //button[text()='Ok']
+18:03:43.646  INFO  manager.ListenerWD - After Find Elements By -->By.xpath: //button[text()='Ok']
+18:03:43.647  INFO  manager.ListenerWD - List size is -->0
+18:03:43.647  INFO  manager.HelperBase - Click OK button was needed

@@ -22,6 +22,7 @@ public class HelperUser extends HelperBase{
     public void openLoginFormHeader() {
 
         wd.findElement(By.cssSelector("a[href ^='/login']")).click();
+       // wd.findElement(By.cssSelector("a[href ='/lo']")).click();
         // //a[text()=' Log in ']
     }
     public void openLoginFormFooter() {
