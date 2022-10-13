@@ -16,6 +16,7 @@ public class ApplicationManager {
     WebDriver wd;
     HelperUser helperUser;
     HelperCar helperCar;
+    HelperSearch helperSearch;
 
 
     public void init(){
@@ -30,6 +31,7 @@ public class ApplicationManager {
         logger.info("The current url is --->" +wd.getCurrentUrl());
         helperUser = new HelperUser(wd);
         helperCar= new HelperCar(wd);
+        helperSearch=new HelperSearch(wd);
     }
 
 
@@ -37,6 +39,9 @@ public class ApplicationManager {
         wd.quit();
     }
 
+    public HelperSearch getSearch() {
+        return helperSearch;
+    }
 
     public HelperUser getHelperUser() {
         return helperUser;
