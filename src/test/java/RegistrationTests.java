@@ -1,3 +1,4 @@
+import manager.DataProviderUser;
 import models.User;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
@@ -14,12 +15,26 @@ public class RegistrationTests extends TestBase{
 
     }
 
+    @Test(dataProvider = "regDataValid", dataProviderClass = DataProviderUser.class)
+    public void  registrationSuccessDP(User user){
+
+        logger.info("Registration scenario success was used data"+user.toString());
+
+        app.getHelperUser().openRegistrationFormHeader();
+        app.getHelperUser().fillRegistrationForm(user);
+        app.getHelperUser().checkPolicyXY();
+        app.getHelperUser().submit();
+        Assert.assertEquals(app.getHelperUser().getTitleMessage(),"Registered");
+        logger.info("In assert checked message 'Registered' in dialog  ");
+
+    }
+
     @Test(enabled = false,description = "Bug Jira 00012")
     public void  registrationSuccess(){
         System.out.println( System.currentTimeMillis());
         int i =(int) (System.currentTimeMillis()/1000)%3600;
         User user = new User().withName("Lisa").withLastname("Snow").withEmail("lis"+i+"@mail.com").withPassword("Ww12345$");
-        logger.info("Login scenario success was used data"+user.toString());
+        logger.info("Registration  scenario success was used data"+user.toString());
         app.getHelperUser().openRegistrationFormHeader();
         app.getHelperUser().fillRegistrationForm(user);
         app.getHelperUser().checkPolicyXY();
@@ -31,7 +46,7 @@ public class RegistrationTests extends TestBase{
     @Test
     public void registrationWrongPassword(){
         User user = new User().withName("Lila").withLastname("Snow").withEmail("lila@mail.com").withPassword("Lila");
-        logger.info("Login negative scenario with wrong password was used data"+user.toString());
+        logger.info("Registration  negative scenario with wrong password was used data"+user.toString());
         app.getHelperUser().openRegistrationFormHeader();
         app.getHelperUser().fillRegistrationForm(user);
         app.getHelperUser().checkPolicyXY();
