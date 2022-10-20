@@ -1,0 +1,41 @@
+20:26:12.380  INFO  manager.ApplicationManager - All tests start in  ChromeDriver
+20:26:14.376  INFO  manager.ApplicationManager - The current url is --->https://ilcarro-1578153671498.web.app/search
+20:26:14.453  INFO  TestBase - Start Method with name --->searchAnyPeriod
+20:26:14.458  INFO  manager.ListenerWD - Before Find Element By -->By.id: city
+20:26:14.551  INFO  manager.ListenerWD - After Find Element By -->By.id: city
+20:26:15.086  INFO  manager.ListenerWD - Before Find Element By -->By.cssSelector: div.pac-item
+20:26:15.618  INFO  manager.ListenerWD - After Find Element By -->By.cssSelector: div.pac-item
+20:26:15.734  INFO  manager.ListenerWD - Before Find Element By -->By.id: dates
+20:26:15.780  INFO  manager.ListenerWD - After Find Element By -->By.id: dates
+20:26:16.152  INFO  manager.HelperBase - year --> 2022
+20:26:16.155  INFO  manager.HelperBase - Day  of Month -->20
+20:26:16.156  INFO  manager.HelperBase - Month value -->10
+20:26:16.157  INFO  manager.ListenerWD - Before Find Element By -->By.cssSelector: button[aria-label='Next month']
+20:26:16.254  INFO  manager.ListenerWD - After Find Element By -->By.cssSelector: button[aria-label='Next month']
+20:26:16.341  INFO  manager.ListenerWD - Before Find Element By -->By.cssSelector: button[aria-label='Next month']
+20:26:16.443  INFO  manager.ListenerWD - After Find Element By -->By.cssSelector: button[aria-label='Next month']
+20:26:16.565  INFO  manager.ListenerWD - Before Find Element By -->By.cssSelector: button[aria-label='Next month']
+20:26:16.620  INFO  manager.ListenerWD - After Find Element By -->By.cssSelector: button[aria-label='Next month']
+20:26:16.808  INFO  manager.ListenerWD - Before Find Element By -->By.cssSelector: button[aria-label='Next month']
+20:26:16.881  INFO  manager.ListenerWD - After Find Element By -->By.cssSelector: button[aria-label='Next month']
+20:26:16.980  INFO  manager.ListenerWD - Before Find Element By -->By.xpath: //div[text()=' 20 ']
+20:26:17.036  INFO  manager.ListenerWD - After Find Element By -->By.xpath: //div[text()=' 20 ']
+20:26:17.198  INFO  manager.ListenerWD - Before Find Element By -->By.cssSelector: button[aria-label='Next month']
+20:26:17.250  INFO  manager.ListenerWD - After Find Element By -->By.cssSelector: button[aria-label='Next month']
+20:26:17.369  INFO  manager.ListenerWD - Before Find Element By -->By.cssSelector: button[aria-label='Next month']
+20:26:17.426  INFO  manager.ListenerWD - After Find Element By -->By.cssSelector: button[aria-label='Next month']
+20:26:17.538  INFO  manager.ListenerWD - Before Find Element By -->By.cssSelector: button[aria-label='Next month']
+20:26:17.585  INFO  manager.ListenerWD - After Find Element By -->By.cssSelector: button[aria-label='Next month']
+20:26:17.681  INFO  manager.ListenerWD - Before Find Element By -->By.cssSelector: button[aria-label='Next month']
+20:26:17.729  INFO  manager.ListenerWD - After Find Element By -->By.cssSelector: button[aria-label='Next month']
+20:26:18.059  INFO  manager.ListenerWD - Before Find Element By -->By.xpath: //div[text()=' 10 ']
+20:26:18.119  INFO  manager.ListenerWD - After Find Element By -->By.xpath: //div[text()=' 10 ']
+20:26:18.538  INFO  manager.ListenerWD - Before Find Element By -->By.cssSelector: button[type='submit']
+20:26:18.635  INFO  manager.ListenerWD - After Find Element By -->By.cssSelector: button[type='submit']
+20:26:18.762  INFO  manager.ListenerWD - Before Find Element By -->By.cssSelector: button[type='submit']
+20:26:18.814  INFO  manager.ListenerWD - After Find Element By -->By.cssSelector: button[type='submit']
+20:26:19.296  INFO  manager.ListenerWD - Before Find Elements By -->By.cssSelector: a.car-container
+20:26:20.342  INFO  manager.ListenerWD - After Find Elements By -->By.cssSelector: a.car-container
+20:26:20.345  INFO  manager.ListenerWD - List size is -->10
+20:26:20.354  INFO  manager.ListenerWD - Before Find Element By -->By.cssSelector: input[aria-haspopup='dialog']
+20:26:20.414  INFO  manager.ListenerWD - After Find Element By -->By.cssSelector: input[aria-haspopup='dialog']

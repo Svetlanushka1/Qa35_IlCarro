@@ -2,6 +2,7 @@ package manager;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
@@ -94,7 +95,7 @@ public class HelperSearch extends HelperBase{
         //String  nowData = "10/20/2022";
         LocalDate now = LocalDate.now();
         LocalDate from=LocalDate.parse(dataFrom, DateTimeFormatter.ofPattern("M/d/yyyy"));
-        LocalDate to = LocalDate.parse(dataTo,DateTimeFormatter.ofPattern("M/d/yyyy"))
+        LocalDate to = LocalDate.parse(dataTo,DateTimeFormatter.ofPattern("M/d/yyyy"));
 
 
         logger.info("year --> " +now.getYear() );
@@ -118,12 +119,30 @@ public class HelperSearch extends HelperBase{
         String locator = String.format("//div[text()=' %s ']",from.getDayOfMonth());
         click(By.xpath(locator));
 
+        ///****************
+        diffYear = to.getYear()-from.getYear();
+        if (diffYear==0){
+            diffMonth = to.getMonthValue()-from.getMonthValue();
+        }else {
+            diffMonth = 12-from.getMonthValue()+ to.getMonthValue();
+        }
+        clickNextMonth(diffMonth);
+        locator = String.format("//div[text()=' %s ']",to.getDayOfMonth());
+        click(By.xpath(locator));
+
     }
 
     private void clickNextMonth(int count) {
         for (int i = 0; i < count; i++) {
             click(By.cssSelector("button[aria-label='Next month']"));
         }
+
+    }
+
+    public boolean isDataCorrect(String from, String to) {
+        WebElement element= wd.findElement(By.cssSelector("input[aria-haspopup='dialog']"));
+        System.out.println(element.getText());
+        return true;
 
     }
 }

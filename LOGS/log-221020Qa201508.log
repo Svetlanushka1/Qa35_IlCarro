@@ -1,0 +1,29 @@
+20:15:15.953  INFO  manager.ApplicationManager - All tests start in  ChromeDriver
+20:15:17.846  INFO  manager.ApplicationManager - The current url is --->https://ilcarro-1578153671498.web.app/search
+20:15:17.883  INFO  TestBase - Start Method with name --->searchAnyPeriod
+20:15:17.893  INFO  manager.ListenerWD - Before Find Element By -->By.id: city
+20:15:17.943  INFO  manager.ListenerWD - After Find Element By -->By.id: city
+20:15:18.437  INFO  manager.ListenerWD - Before Find Element By -->By.cssSelector: div.pac-item
+20:15:18.841  INFO  manager.ListenerWD - After Find Element By -->By.cssSelector: div.pac-item
+20:15:18.969  INFO  manager.ListenerWD - Before Find Element By -->By.id: dates
+20:15:19.022  INFO  manager.ListenerWD - After Find Element By -->By.id: dates
+20:15:19.433  INFO  manager.HelperBase - year --> 2022
+20:15:19.435  INFO  manager.HelperBase - Day  of Month -->20
+20:15:19.438  INFO  manager.HelperBase - Month value -->10
+20:15:19.438  INFO  manager.ListenerWD - Before Find Element By -->By.cssSelector: button[aria-label='Next month']
+20:15:19.542  INFO  manager.ListenerWD - After Find Element By -->By.cssSelector: button[aria-label='Next month']
+20:15:19.648  INFO  manager.ListenerWD - Before Find Element By -->By.cssSelector: button[aria-label='Next month']
+20:15:19.751  INFO  manager.ListenerWD - After Find Element By -->By.cssSelector: button[aria-label='Next month']
+20:15:19.855  INFO  manager.ListenerWD - Before Find Element By -->By.xpath: //div[text()=' 20 ']
+20:15:19.911  INFO  manager.ListenerWD - After Find Element By -->By.xpath: //div[text()=' 20 ']
+20:15:20.024  INFO  manager.ListenerWD - Before Find Element By -->By.cssSelector: button[aria-label='Next month']
+20:15:20.080  INFO  manager.ListenerWD - After Find Element By -->By.cssSelector: button[aria-label='Next month']
+20:15:20.184  INFO  manager.ListenerWD - Before Find Element By -->By.xpath: //div[text()=' 10 ']
+20:15:20.235  INFO  manager.ListenerWD - After Find Element By -->By.xpath: //div[text()=' 10 ']
+20:15:20.478  INFO  manager.ListenerWD - Before Find Element By -->By.cssSelector: button[type='submit']
+20:15:20.551  INFO  manager.ListenerWD - After Find Element By -->By.cssSelector: button[type='submit']
+20:15:20.685  INFO  manager.ListenerWD - Before Find Element By -->By.cssSelector: button[type='submit']
+20:15:20.736  INFO  manager.ListenerWD - After Find Element By -->By.cssSelector: button[type='submit']
+20:15:20.970  INFO  manager.ListenerWD - Before Find Elements By -->By.cssSelector: a.car-container
+20:15:22.062  INFO  manager.ListenerWD - After Find Elements By -->By.cssSelector: a.car-container
+20:15:22.062  INFO  manager.ListenerWD - List size is -->10
