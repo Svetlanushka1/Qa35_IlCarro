@@ -1,0 +1,22 @@
+18:31:31.436  INFO  manager.ApplicationManager - All tests start in  ChromeDriver
+18:31:33.849  INFO  manager.ApplicationManager - The current url is --->https://ilcarro-1578153671498.web.app/search
+18:31:33.894  INFO  TestBase - Start Method with name --->searchNextMonthSuccess
+18:31:33.900  INFO  manager.ListenerWD - Before Find Element By -->By.id: city
+18:31:33.991  INFO  manager.ListenerWD - After Find Element By -->By.id: city
+18:31:34.490  INFO  manager.ListenerWD - Before Find Element By -->By.cssSelector: div.pac-item
+18:31:35.032  INFO  manager.ListenerWD - After Find Element By -->By.cssSelector: div.pac-item
+18:31:35.155  INFO  manager.ListenerWD - Before Find Element By -->By.id: dates
+18:31:35.206  INFO  manager.ListenerWD - After Find Element By -->By.id: dates
+18:31:35.436  INFO  manager.ListenerWD - Before Find Element By -->By.cssSelector: button[aria-label='Next month']
+18:31:35.498  INFO  manager.ListenerWD - After Find Element By -->By.cssSelector: button[aria-label='Next month']
+18:31:35.622  INFO  manager.ListenerWD - Before Find Element By -->By.xpath: //div[text()=' 25 ']
+18:31:35.715  INFO  manager.ListenerWD - After Find Element By -->By.xpath: //div[text()=' 25 ']
+18:31:35.868  INFO  manager.ListenerWD - Before Find Element By -->By.xpath: //div[text()=' 30 ']
+18:31:35.909  INFO  manager.ListenerWD - After Find Element By -->By.xpath: //div[text()=' 30 ']
+18:31:36.130  INFO  manager.ListenerWD - Before Find Element By -->By.cssSelector: button[type='submit']
+18:31:36.222  INFO  manager.ListenerWD - After Find Element By -->By.cssSelector: button[type='submit']
+18:31:36.315  INFO  manager.ListenerWD - Before Find Element By -->By.cssSelector: button[type='submit']
+18:31:36.353  INFO  manager.ListenerWD - After Find Element By -->By.cssSelector: button[type='submit']
+18:31:36.575  INFO  manager.ListenerWD - Before Find Elements By -->By.cssSelector: a.car-container
+18:31:37.613  INFO  manager.ListenerWD - After Find Elements By -->By.cssSelector: a.car-container
+18:31:37.619  INFO  manager.ListenerWD - List size is -->10

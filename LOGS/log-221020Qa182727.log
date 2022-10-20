@@ -1,0 +1,26 @@
+18:27:34.118  INFO  manager.ApplicationManager - All tests start in  ChromeDriver
+18:27:36.156  INFO  manager.ApplicationManager - The current url is --->https://ilcarro-1578153671498.web.app/search
+18:27:36.200  INFO  TestBase - Start Method with name --->searchNextMonthSuccess
+18:27:36.227  INFO  manager.ListenerWD - Before Find Element By -->By.id: city
+18:27:36.285  INFO  manager.ListenerWD - After Find Element By -->By.id: city
+18:27:36.808  INFO  manager.ListenerWD - Before Find Element By -->By.cssSelector: div.pac-item
+18:27:37.193  INFO  manager.ListenerWD - After Find Element By -->By.cssSelector: div.pac-item
+18:27:37.326  INFO  manager.ListenerWD - Before Find Element By -->By.id: dates
+18:27:37.384  INFO  manager.ListenerWD - After Find Element By -->By.id: dates
+18:27:37.663  INFO  manager.ListenerWD - Before Find Element By -->By.cssSelector: button[aria-label='Next month']
+18:27:37.737  INFO  manager.ListenerWD - After Find Element By -->By.cssSelector: button[aria-label='Next month']
+18:27:37.888  INFO  manager.ListenerWD - Before Find Element By -->By.xpath: div[text()=' 25 ']
+18:27:42.965  INFO  manager.ListenerWD - We have a 'problem'
+18:27:42.966  INFO  manager.ListenerWD - The name of error method  findElement
+18:27:42.982  INFO  manager.ListenerWD - Describe of error org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"div[text()=' 25 ']"}
+  (Session info: chrome=106.0.5249.119)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'MacBook-Pro-Taya.local', ip: '192.168.0.103', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.6.5', java.version: '11.0.15.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [74e14d983bee846fecb033cc35cc658d, findElement {using=xpath, value=div[text()=' 25 ']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.119, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: /var/folders/s_/hl4vhy0959g...}, goog:chromeOptions: {debuggerAddress: localhost:65267}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:65267/devtoo..., se:cdpVersion: 106.0.5249.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 74e14d983bee846fecb033cc35cc658d
+18:27:42.983  INFO  manager.ListenerWD - *********************
+18:27:42.984  INFO  manager.ListenerWD - ChromeDriver: chrome on MAC (74e14d983bee846fecb033cc35cc658d)
+18:27:42.997  INFO  manager.ListenerWD - Screen with error is  1850 ****src/test/screenshots/screen1850.png
