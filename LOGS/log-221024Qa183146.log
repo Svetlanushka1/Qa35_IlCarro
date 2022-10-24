@@ -1,0 +1,20 @@
+18:31:53.303  INFO  manager.ApplicationManager - All tests start in  ChromeDriver
+18:31:55.270  INFO  manager.ApplicationManager - The current url is --->https://ilcarro-1578153671498.web.app/search
+18:31:55.310  INFO  TestBase - Start Method with name --->searchInPast
+18:31:55.323  INFO  manager.ListenerWD - Before Find Element By -->By.id: city
+18:31:55.411  INFO  manager.ListenerWD - After Find Element By -->By.id: city
+18:31:55.982  INFO  manager.ListenerWD - Before Find Element By -->By.cssSelector: div.pac-item
+18:31:56.360  INFO  manager.ListenerWD - After Find Element By -->By.cssSelector: div.pac-item
+18:31:56.487  INFO  manager.ListenerWD - Before Find Element By -->By.id: dates
+18:31:56.542  INFO  manager.ListenerWD - After Find Element By -->By.id: dates
+18:31:57.124  INFO  manager.ListenerWD - Before Find Element By -->By.cssSelector: .cdk-overlay-container
+18:31:57.217  INFO  manager.ListenerWD - After Find Element By -->By.cssSelector: .cdk-overlay-container
+18:31:57.447  INFO  manager.ListenerWD - Before Find Element By -->By.cssSelector: button[type='submit']
+18:31:57.500  INFO  manager.ListenerWD - After Find Element By -->By.cssSelector: button[type='submit']
+18:31:57.584  INFO  manager.ListenerWD - Before Find Elements By -->By.cssSelector: button[disabled]
+18:31:57.641  INFO  manager.ListenerWD - After Find Elements By -->By.cssSelector: button[disabled]
+18:31:57.645  INFO  manager.ListenerWD - List size is -->1
+18:31:57.646  INFO  manager.ListenerWD - Before Find Element By -->By.cssSelector: [type='submit']
+18:31:57.693  INFO  manager.ListenerWD - After Find Element By -->By.cssSelector: [type='submit']
+18:31:57.713  INFO  manager.ListenerWD - Before Find Element By -->By.cssSelector: div.ng-star-inserted
+18:31:57.759  INFO  manager.ListenerWD - After Find Element By -->By.cssSelector: div.ng-star-inserted

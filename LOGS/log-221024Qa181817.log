@@ -1,0 +1,25 @@
+18:18:23.180  INFO  manager.ApplicationManager - All tests start in  ChromeDriver
+18:18:24.776  INFO  manager.ApplicationManager - The current url is --->https://ilcarro-1578153671498.web.app/search
+18:18:24.811  INFO  TestBase - Start Method with name --->searchInPast
+18:18:24.816  INFO  manager.ListenerWD - Before Find Element By -->By.id: city
+18:18:24.872  INFO  manager.ListenerWD - After Find Element By -->By.id: city
+18:18:25.370  INFO  manager.ListenerWD - Before Find Element By -->By.cssSelector: div.pac-item
+18:18:25.731  INFO  manager.ListenerWD - After Find Element By -->By.cssSelector: div.pac-item
+18:18:25.855  INFO  manager.ListenerWD - Before Find Element By -->By.id: dates
+18:18:25.899  INFO  manager.ListenerWD - After Find Element By -->By.id: dates
+18:18:26.583  INFO  manager.ListenerWD - Before Find Element By -->By.cssSelector: button[type='submit']
+18:18:26.643  INFO  manager.ListenerWD - After Find Element By -->By.cssSelector: button[type='submit']
+18:18:27.757  INFO  manager.ListenerWD - We have a 'problem'
+18:18:27.757  INFO  manager.ListenerWD - The name of error method  click
+18:18:27.773  INFO  manager.ListenerWD - Describe of error org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <button _ngcontent-mii-c72="" type="submit" disabled="">...</button> is not clickable at point (207, 409). Other element would receive the click: <span class="mat-button-wrapper">...</span>
+  (Session info: chrome=106.0.5249.119)
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'MacBook-Pro-Taya.local', ip: '192.168.0.100', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.6.5', java.version: '11.0.15.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2c75a0e1ef3d66cc071d8ec71ca1b7bc, clickElement {id=9b80b609-497b-4a2f-96a9-8fad45bcd462}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.119, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: /var/folders/s_/hl4vhy0959g...}, goog:chromeOptions: {debuggerAddress: localhost:58510}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:58510/devtoo..., se:cdpVersion: 106.0.5249.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on MAC (2c75a0e1ef3d66cc071d8ec71ca1b7bc)] -> css selector: button[type='submit']]
+Session ID: 2c75a0e1ef3d66cc071d8ec71ca1b7bc
+18:18:27.774  INFO  manager.ListenerWD - *********************
+18:18:27.774  INFO  manager.ListenerWD - [[ChromeDriver: chrome on MAC (2c75a0e1ef3d66cc071d8ec71ca1b7bc)] -> css selector: button[type='submit']]
+18:18:27.791  INFO  manager.ListenerWD - Screen with error is  1245 ****src/test/screenshots/screen1245.png

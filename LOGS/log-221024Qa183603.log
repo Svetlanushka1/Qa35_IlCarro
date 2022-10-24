@@ -1,0 +1,101 @@
+18:36:10.057  INFO  manager.ApplicationManager - All tests start in  ChromeDriver
+18:36:12.426  INFO  manager.ApplicationManager - The current url is --->https://ilcarro-1578153671498.web.app/search
+18:36:12.485  INFO  TestBase - Start Method with name --->searchAnyPeriod
+18:36:12.495  INFO  manager.ListenerWD - Before Find Element By -->By.id: city
+18:36:12.609  INFO  manager.ListenerWD - After Find Element By -->By.id: city
+18:36:13.170  INFO  manager.ListenerWD - Before Find Element By -->By.cssSelector: div.pac-item
+18:36:13.539  INFO  manager.ListenerWD - After Find Element By -->By.cssSelector: div.pac-item
+18:36:13.626  INFO  manager.ListenerWD - Before Find Element By -->By.id: dates
+18:36:13.673  INFO  manager.ListenerWD - After Find Element By -->By.id: dates
+18:36:13.957  INFO  manager.HelperBase - year --> 2022
+18:36:13.958  INFO  manager.HelperBase - Day  of Month -->24
+18:36:13.959  INFO  manager.HelperBase - Month value -->10
+18:36:13.960  INFO  manager.ListenerWD - Before Find Element By -->By.cssSelector: button[aria-label='Next month']
+18:36:14.103  INFO  manager.ListenerWD - After Find Element By -->By.cssSelector: button[aria-label='Next month']
+18:36:14.242  INFO  manager.ListenerWD - Before Find Element By -->By.cssSelector: button[aria-label='Next month']
+18:36:14.342  INFO  manager.ListenerWD - After Find Element By -->By.cssSelector: button[aria-label='Next month']
+18:36:14.464  INFO  manager.ListenerWD - Before Find Element By -->By.cssSelector: button[aria-label='Next month']
+18:36:14.518  INFO  manager.ListenerWD - After Find Element By -->By.cssSelector: button[aria-label='Next month']
+18:36:14.593  INFO  manager.ListenerWD - Before Find Element By -->By.cssSelector: button[aria-label='Next month']
+18:36:14.656  INFO  manager.ListenerWD - After Find Element By -->By.cssSelector: button[aria-label='Next month']
+18:36:14.743  INFO  manager.ListenerWD - Before Find Element By -->By.xpath: //div[text()=' 20 ']
+18:36:14.821  INFO  manager.ListenerWD - After Find Element By -->By.xpath: //div[text()=' 20 ']
+18:36:14.942  INFO  manager.ListenerWD - Before Find Element By -->By.cssSelector: button[aria-label='Next month']
+18:36:14.991  INFO  manager.ListenerWD - After Find Element By -->By.cssSelector: button[aria-label='Next month']
+18:36:15.108  INFO  manager.ListenerWD - Before Find Element By -->By.cssSelector: button[aria-label='Next month']
+18:36:15.190  INFO  manager.ListenerWD - After Find Element By -->By.cssSelector: button[aria-label='Next month']
+18:36:15.305  INFO  manager.ListenerWD - Before Find Element By -->By.cssSelector: button[aria-label='Next month']
+18:36:15.339  INFO  manager.ListenerWD - After Find Element By -->By.cssSelector: button[aria-label='Next month']
+18:36:15.436  INFO  manager.ListenerWD - Before Find Element By -->By.cssSelector: button[aria-label='Next month']
+18:36:15.467  INFO  manager.ListenerWD - After Find Element By -->By.cssSelector: button[aria-label='Next month']
+18:36:15.591  INFO  manager.ListenerWD - Before Find Element By -->By.xpath: //div[text()=' 10 ']
+18:36:15.643  INFO  manager.ListenerWD - After Find Element By -->By.xpath: //div[text()=' 10 ']
+18:36:15.915  INFO  manager.ListenerWD - Before Find Element By -->By.cssSelector: button[type='submit']
+18:36:15.977  INFO  manager.ListenerWD - After Find Element By -->By.cssSelector: button[type='submit']
+18:36:16.067  INFO  manager.ListenerWD - Before Find Element By -->By.cssSelector: button[type='submit']
+18:36:16.124  INFO  manager.ListenerWD - After Find Element By -->By.cssSelector: button[type='submit']
+18:36:16.342  INFO  manager.ListenerWD - Before Find Elements By -->By.cssSelector: a.car-container
+18:36:17.430  INFO  manager.ListenerWD - After Find Elements By -->By.cssSelector: a.car-container
+18:36:17.431  INFO  manager.ListenerWD - List size is -->10
+18:36:17.436  INFO  manager.ListenerWD - Before Find Element By -->By.cssSelector: input[aria-haspopup='dialog']
+18:36:17.486  INFO  manager.ListenerWD - After Find Element By -->By.cssSelector: input[aria-haspopup='dialog']
+18:36:17.572  INFO  TestBase - Start Method with name --->searchCurrentMonthSuccess
+18:36:17.584  INFO  manager.ListenerWD - Before Find Element By -->By.id: city
+18:36:17.869  INFO  manager.ListenerWD - After Find Element By -->By.id: city
+18:36:18.657  INFO  manager.ListenerWD - Before Find Element By -->By.cssSelector: div.pac-item
+18:36:18.696  INFO  manager.ListenerWD - After Find Element By -->By.cssSelector: div.pac-item
+18:36:18.907  INFO  manager.ListenerWD - Before Find Element By -->By.id: dates
+18:36:23.969  INFO  manager.ListenerWD - We have a 'problem'
+18:36:23.970  INFO  manager.ListenerWD - The name of error method  findElement
+18:36:23.992  INFO  manager.ListenerWD - Describe of error org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#dates"}
+  (Session info: chrome=106.0.5249.119)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'MacBook-Pro-Taya.local', ip: '192.168.0.100', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.6.5', java.version: '11.0.15.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [73802bc700fb15eeb2bf03fab01a8bbe, findElement {using=id, value=dates}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.119, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: /var/folders/s_/hl4vhy0959g...}, goog:chromeOptions: {debuggerAddress: localhost:64578}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:64578/devtoo..., se:cdpVersion: 106.0.5249.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 73802bc700fb15eeb2bf03fab01a8bbe
+18:36:23.993  INFO  manager.ListenerWD - *********************
+18:36:23.993  INFO  manager.ListenerWD - ChromeDriver: chrome on MAC (73802bc700fb15eeb2bf03fab01a8bbe)
+18:36:24.021  INFO  manager.ListenerWD - Screen with error is  1313 ****src/test/screenshots/screen1313.png
+18:36:24.026  INFO  TestBase - Start Method with name --->searchInPast
+18:36:24.027  INFO  manager.ListenerWD - Before Find Element By -->By.id: city
+18:36:24.090  INFO  manager.ListenerWD - After Find Element By -->By.id: city
+18:36:25.007  INFO  manager.ListenerWD - Before Find Element By -->By.cssSelector: div.pac-item
+18:36:25.051  INFO  manager.ListenerWD - After Find Element By -->By.cssSelector: div.pac-item
+18:36:25.312  INFO  manager.ListenerWD - Before Find Element By -->By.id: dates
+18:36:30.316  INFO  manager.ListenerWD - We have a 'problem'
+18:36:30.318  INFO  manager.ListenerWD - The name of error method  findElement
+18:36:30.319  INFO  manager.ListenerWD - Describe of error org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#dates"}
+  (Session info: chrome=106.0.5249.119)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'MacBook-Pro-Taya.local', ip: '192.168.0.100', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.6.5', java.version: '11.0.15.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [73802bc700fb15eeb2bf03fab01a8bbe, findElement {using=id, value=dates}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.119, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: /var/folders/s_/hl4vhy0959g...}, goog:chromeOptions: {debuggerAddress: localhost:64578}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:64578/devtoo..., se:cdpVersion: 106.0.5249.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 73802bc700fb15eeb2bf03fab01a8bbe
+18:36:30.320  INFO  manager.ListenerWD - *********************
+18:36:30.320  INFO  manager.ListenerWD - ChromeDriver: chrome on MAC (73802bc700fb15eeb2bf03fab01a8bbe)
+18:36:30.320  INFO  manager.ListenerWD - Screen with error is  1715 ****src/test/screenshots/screen1715.png
+18:36:30.322  INFO  TestBase - Start Method with name --->searchNextMonthSuccess
+18:36:30.324  INFO  manager.ListenerWD - Before Find Element By -->By.id: city
+18:36:30.378  INFO  manager.ListenerWD - After Find Element By -->By.id: city
+18:36:30.988  INFO  manager.ListenerWD - Before Find Element By -->By.cssSelector: div.pac-item
+18:36:31.023  INFO  manager.ListenerWD - After Find Element By -->By.cssSelector: div.pac-item
+18:36:31.217  INFO  manager.ListenerWD - Before Find Element By -->By.id: dates
+18:36:36.282  INFO  manager.ListenerWD - We have a 'problem'
+18:36:36.282  INFO  manager.ListenerWD - The name of error method  findElement
+18:36:36.283  INFO  manager.ListenerWD - Describe of error org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#dates"}
+  (Session info: chrome=106.0.5249.119)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'MacBook-Pro-Taya.local', ip: '192.168.0.100', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.6.5', java.version: '11.0.15.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [73802bc700fb15eeb2bf03fab01a8bbe, findElement {using=id, value=dates}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.119, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: /var/folders/s_/hl4vhy0959g...}, goog:chromeOptions: {debuggerAddress: localhost:64578}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:64578/devtoo..., se:cdpVersion: 106.0.5249.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 73802bc700fb15eeb2bf03fab01a8bbe
+18:36:36.283  INFO  manager.ListenerWD - *********************
+18:36:36.283  INFO  manager.ListenerWD - ChromeDriver: chrome on MAC (73802bc700fb15eeb2bf03fab01a8bbe)
+18:36:36.284  INFO  manager.ListenerWD - Screen with error is  1948 ****src/test/screenshots/screen1948.png
