@@ -1,0 +1,28 @@
+21:04:37.710  INFO  manager.ApplicationManager - All tests start in  Firefox
+21:04:40.501  INFO  manager.ApplicationManager - The current url is --->https://ilcarro-1578153671498.web.app/search
+21:04:40.598  INFO  TestBase - Start Method with name --->loginSuccessModels
+21:04:40.608  INFO  manager.ListenerWD - Before Find Elements By -->By.xpath: //a[text()=' Logout ']
+21:04:45.631  INFO  manager.ListenerWD - After Find Elements By -->By.xpath: //a[text()=' Logout ']
+21:04:45.636  INFO  manager.ListenerWD - List size is -->0
+21:04:45.670  INFO  TestBase - Login scenario success was used dataUser{name='null', lastname='null', email='noa@gmail.com', password='Nnoa12345$', phone='null'}
+21:04:45.671  INFO  manager.ListenerWD - Before Find Element By -->By.xpath: //a[text()='Log in']
+21:04:45.749  INFO  manager.ListenerWD - After Find Element By -->By.xpath: //a[text()='Log in']
+21:04:46.494  INFO  manager.ListenerWD - Before Find Element By -->By.id: email
+21:04:46.536  INFO  manager.ListenerWD - After Find Element By -->By.id: email
+21:04:46.889  INFO  manager.ListenerWD - Before Find Element By -->By.id: password
+21:04:46.936  INFO  manager.ListenerWD - After Find Element By -->By.id: password
+21:04:47.232  INFO  manager.ListenerWD - Before Find Element By -->By.cssSelector: button[type='submit']
+21:04:47.262  INFO  manager.ListenerWD - After Find Element By -->By.cssSelector: button[type='submit']
+21:04:47.342  INFO  manager.ListenerWD - Before Find Element By -->By.cssSelector: button[type='submit']
+21:04:47.436  INFO  manager.ListenerWD - After Find Element By -->By.cssSelector: button[type='submit']
+21:04:47.703  INFO  manager.ListenerWD - Before Find Element By -->By.cssSelector: div.dialog-container
+21:04:48.702  INFO  manager.ListenerWD - After Find Element By -->By.cssSelector: div.dialog-container
+21:04:48.737  INFO  manager.ListenerWD - Before Find Element By -->By.cssSelector: h2.message
+21:04:48.775  INFO  manager.ListenerWD - After Find Element By -->By.cssSelector: h2.message
+21:04:48.800  INFO  TestBase - In assert checked message 'Logged in success' in dialog  
+21:04:48.803  INFO  manager.ListenerWD - Before Find Elements By -->By.xpath: //button[text()='Ok']
+21:04:48.951  INFO  manager.ListenerWD - After Find Elements By -->By.xpath: //button[text()='Ok']
+21:04:48.952  INFO  manager.ListenerWD - List size is -->1
+21:04:48.957  INFO  manager.ListenerWD - Before Find Element By -->By.xpath: //button[text()='Ok']
+21:04:49.152  INFO  manager.ListenerWD - After Find Element By -->By.xpath: //button[text()='Ok']
+21:04:49.390  INFO  manager.HelperBase - Click OK button was needed

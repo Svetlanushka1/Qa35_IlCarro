@@ -58,6 +58,10 @@ public class AddNewCarTests extends TestBase{
 
     @Test (dataProvider = "carValidData",dataProviderClass = DataProviderCar.class)
     public void addCarSuccessDP(Car car){
+        Random random = new Random();
+       int i =  random.nextInt(1000)+1000;
+
+        car.setCarRegistrationNumber("111-899-" +i);
 
 
 

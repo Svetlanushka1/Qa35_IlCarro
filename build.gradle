@@ -24,3 +24,12 @@ dependencies {
 test {
     useTestNG()
 }
+
+task carro(type: Test){
+    useTestNG(){
+        suites 'src/test/resources/testng.xml'
+    }
+    if(project.hasProperty('browser')){
+        systemProperty 'browser', "${browser}"
+    }
+}
