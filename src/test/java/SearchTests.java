@@ -5,9 +5,9 @@ import org.testng.annotations.Test;
 
 public class SearchTests extends TestBase{
 
-    @Test
+    @Test (groups = {"smoke"})
     public void searchCurrentMonthSuccess(){
-        app.getSearch().searchCurrentMonth2("Tel Aviv","10/28/2022","10/30/2022");
+        app.getSearch().searchCurrentMonth2("Tel Aviv","10/29/2022","10/30/2022");
         app.getSearch().submit();
         Assert.assertTrue(app.getSearch().isListOfCarsAppeared());
     }
@@ -37,7 +37,7 @@ public class SearchTests extends TestBase{
 
     }
 
-    @BeforeMethod
+    @BeforeMethod  (alwaysRun = true)
     public void returnHomePage(){
         app.getSearch().clickLogo();
     }

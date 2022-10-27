@@ -12,7 +12,7 @@ public class LoginTests extends TestBase{
 
 
 
-    @BeforeMethod
+    @BeforeMethod (alwaysRun = true)
     public void preCondition(){
         if(app.getHelperUser().isLogged()) {
             //if(app.getHelperUser().isElementPresent(By.xpath("//a"))){
@@ -49,7 +49,7 @@ public class LoginTests extends TestBase{
     }
 
 
-    @Test
+    @Test (groups = {"smoke"})
     public void loginSuccessModels(){
 
 
@@ -92,7 +92,7 @@ public class LoginTests extends TestBase{
     }
 
 
-    @AfterMethod
+    @AfterMethod  (alwaysRun = true)
     public void postCondition(){
 
         app.getHelperUser().clickOkButton();

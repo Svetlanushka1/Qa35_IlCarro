@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 
 public class RegistrationTests extends TestBase{
 
-    @BeforeMethod
+    @BeforeMethod  (alwaysRun = true)
     public void preCondition(){
         if(app.getHelperUser().isLogged())
             app.getHelperUser().logout();
@@ -43,7 +43,7 @@ public class RegistrationTests extends TestBase{
         logger.info("In assert checked message 'Registered' in dialog  ");
 
     }
-    @Test
+    @Test(groups = {"smoke"})
     public void registrationWrongPassword(){
         User user = new User().withName("Lila").withLastname("Snow").withEmail("lila@mail.com").withPassword("Lila");
         logger.info("Registration  negative scenario with wrong password was used data"+user.toString());
@@ -57,7 +57,7 @@ public class RegistrationTests extends TestBase{
 
 
 
-    @AfterMethod
+    @AfterMethod  (alwaysRun = true)
     public void postCondition(){
 
         app.getHelperUser().clickOkButton();

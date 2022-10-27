@@ -11,20 +11,20 @@ import java.lang.reflect.Method;
 public class TestBase {
     Logger logger= LoggerFactory.getLogger(TestBase.class);
 
-    static ApplicationManager app = new ApplicationManager(System.getProperty("browser", Browser.FIREFOX.browserName()));
+    static ApplicationManager app = new ApplicationManager(System.getProperty("browser", Browser.CHROME.browserName()));
 
-    @BeforeMethod
+    @BeforeMethod  (alwaysRun = true)
     public void loggerGetMethodName(Method m){
         logger.info("Start Method with name --->" +m.getName());
     }
 
-    @BeforeSuite
+    @BeforeSuite  (alwaysRun = true)
     public void setUp() {
         app.init();
     }
 
 
-    @AfterSuite
+    @AfterSuite  (alwaysRun = true)
     public void tearDown() {
 
        app.stop();

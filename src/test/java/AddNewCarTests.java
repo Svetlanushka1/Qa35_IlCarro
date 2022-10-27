@@ -10,7 +10,7 @@ import java.util.Random;
 
 public class AddNewCarTests extends TestBase{
 
-    @BeforeMethod
+    @BeforeMethod (alwaysRun = true)
     public void preCondition(){
        if (!app.getHelperUser().isLogged()) {
            User user = new User().withEmail("noa@gmail.com").withPassword("Nnoa12345$");
@@ -19,7 +19,7 @@ public class AddNewCarTests extends TestBase{
        }
     }
 
-    @Test
+    @Test(groups = {"smoke","sanity"})
     public void addCarSuccess(){
 
 
@@ -77,7 +77,7 @@ public class AddNewCarTests extends TestBase{
     }
 
 
-    @AfterMethod
+    @AfterMethod  (alwaysRun = true)
     public void posCondition(){
         app.helperCar().returnToHomePage();
     }

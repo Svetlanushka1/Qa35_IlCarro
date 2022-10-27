@@ -27,9 +27,33 @@ test {
 
 task carro(type: Test){
     useTestNG(){
-        suites 'src/test/resources/testng.xml'
+
+        def groups = System.getProperty('groups')
+        if (groups != null) {
+            includeGroups groups
+        }
+
+
+        def suite = System.getProperty('suite', '')
+
+        if(suite.equals("testng")){
+            suites 'src/test/resources/testng.xml'
+        }else if (suite.equals("cartests")){
+            suites 'src/test/resources/cartests.xml'
+        }else {
+            suites 'src/test/resources/alltests.xml'
+        }
+
+
+
     }
     if(project.hasProperty('browser')){
         systemProperty 'browser', "${browser}"
+    }
+}
+
+task groups(type :Test){
+    useTestNG(){
+        suites 'src/test/resources/groups.xml'
     }
 }
