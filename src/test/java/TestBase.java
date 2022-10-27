@@ -11,7 +11,7 @@ import java.lang.reflect.Method;
 public class TestBase {
     Logger logger= LoggerFactory.getLogger(TestBase.class);
 
-    static ApplicationManager app = new ApplicationManager(System.getProperty("browser", Browser.CHROME.browserName()));
+    static ApplicationManager app = new ApplicationManager(System.getProperty("browser", Browser.FIREFOX.browserName()));
 
     @BeforeMethod  (alwaysRun = true)
     public void loggerGetMethodName(Method m){

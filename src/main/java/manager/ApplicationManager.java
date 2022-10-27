@@ -30,7 +30,8 @@ public class ApplicationManager {
         if(browser.equals(Browser.CHROME.browserName())){ // firefox!=chrome
             wd = new ChromeDriver();
             logger.info("All tests start in  ChromeDriver");
-        }else if (browser.equals(Browser.FIREFOX.browserName())){ //firefox =firefox
+        }else if (browser.equals(Browser.FIREFOX.browserName())){
+           //System.setProperty("webdriver.gecko.driver","/Users/tayahatum/Qa35/Qa35_IlCarro/geckodriver");//firefox =firefox
             wd= new FirefoxDriver();
             logger.info("All tests start in  Firefox");
         }else if (browser.equals(Browser.EDGE.browserName())){

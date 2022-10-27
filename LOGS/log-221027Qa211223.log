@@ -1,0 +1,37 @@
+21:12:36.413  INFO  manager.ApplicationManager - All tests start in  Firefox
+21:12:39.944  INFO  manager.ApplicationManager - The current url is --->https://ilcarro-1578153671498.web.app/search
+21:12:40.069  INFO  TestBase - Start Method with name --->loginSuccessModels
+21:12:40.075  INFO  manager.ListenerWD - Before Find Elements By -->By.xpath: //a[text()=' Logout ']
+21:12:45.166  INFO  manager.ListenerWD - After Find Elements By -->By.xpath: //a[text()=' Logout ']
+21:12:45.173  INFO  manager.ListenerWD - List size is -->0
+21:12:45.226  INFO  TestBase - Login scenario success was used dataUser{name='null', lastname='null', email='noa@gmail.com', password='Nnoa12345$', phone='null'}
+21:12:45.234  INFO  manager.ListenerWD - Before Find Element By -->By.xpath: //a[text()='Log in']
+21:12:45.530  INFO  manager.ListenerWD - After Find Element By -->By.xpath: //a[text()='Log in']
+21:12:47.114  INFO  manager.ListenerWD - Before Find Element By -->By.id: email
+21:12:47.242  INFO  manager.ListenerWD - After Find Element By -->By.id: email
+21:12:47.613  INFO  manager.ListenerWD - Before Find Element By -->By.id: password
+21:12:47.692  INFO  manager.ListenerWD - After Find Element By -->By.id: password
+21:12:48.109  INFO  manager.ListenerWD - Before Find Element By -->By.cssSelector: button[type='submit']
+21:12:48.165  INFO  manager.ListenerWD - After Find Element By -->By.cssSelector: button[type='submit']
+21:12:48.459  INFO  manager.ListenerWD - Before Find Element By -->By.cssSelector: button[type='submit']
+21:12:48.554  INFO  manager.ListenerWD - After Find Element By -->By.cssSelector: button[type='submit']
+21:12:48.826  INFO  manager.ListenerWD - Before Find Element By -->By.cssSelector: div.dialog-container
+21:12:53.891  INFO  manager.ListenerWD - We have a 'problem'
+21:12:53.892  INFO  manager.ListenerWD - The name of error method  findElement
+21:12:53.939  INFO  manager.ListenerWD - Describe of error org.openqa.selenium.NoSuchElementException: Unable to locate element: div.dialog-container
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'MacBook-Pro-Taya.local', ip: '127.0.0.1', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.6.5', java.version: '11.0.15.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [e9852f5f-88a9-4e51-b31f-706e65b4401e, findElement {using=css selector, value=div.dialog-container}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 105.0.3, moz:accessibilityChecks: false, moz:buildID: 20221007134813, moz:debuggerAddress: 127.0.0.1:65034, moz:geckodriverVersion: 0.32.0, moz:headless: false, moz:platformVersion: 20.6.0, moz:processID: 24538, moz:profile: /var/folders/s_/hl4vhy0959g..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://127.0.0.1:65034/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: e9852f5f-88a9-4e51-b31f-706e65b4401e
+21:12:53.940  INFO  manager.ListenerWD - *********************
+21:12:53.940  INFO  manager.ListenerWD - FirefoxDriver: firefox on MAC (e9852f5f-88a9-4e51-b31f-706e65b4401e)
+21:12:53.957  INFO  manager.ListenerWD - Screen with error is  1475 ****src/test/screenshots/screen1475.png
+21:12:53.963  INFO  manager.ListenerWD - Before Find Elements By -->By.xpath: //button[text()='Ok']
+21:12:56.424  INFO  manager.ListenerWD - After Find Elements By -->By.xpath: //button[text()='Ok']
+21:12:56.424  INFO  manager.ListenerWD - List size is -->1
+21:12:56.425  INFO  manager.ListenerWD - Before Find Element By -->By.xpath: //button[text()='Ok']
+21:12:56.477  INFO  manager.ListenerWD - After Find Element By -->By.xpath: //button[text()='Ok']
+21:12:56.795  INFO  manager.HelperBase - Click OK button was needed
