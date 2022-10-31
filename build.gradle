@@ -56,4 +56,8 @@ task groups(type :Test){
     useTestNG(){
         suites 'src/test/resources/groups.xml'
     }
+
+    if(project.hasProperty('browser')){
+        systemProperty 'browser', "${browser}"
+    }
 }
