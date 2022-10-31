@@ -27,7 +27,7 @@ public class HelperUser extends HelperBase{
     }
     public void openLoginFormFooter() {
         // a[href ^='/login']
-        wd.findElement(By.xpath("//a[text()='Log in']")).click();
+       // wd.findElement(By.xpath("//a[text()='Log in']")).click();
     }
 
     public void fillLoginForm(String email, String password) {
