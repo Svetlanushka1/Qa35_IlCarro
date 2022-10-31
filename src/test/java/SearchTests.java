@@ -5,14 +5,14 @@ import org.testng.annotations.Test;
 
 public class SearchTests extends TestBase{
 
-    @Test (groups = {"smoke"})
+    @Test
     public void searchCurrentMonthSuccess(){
-        app.getSearch().searchCurrentMonth2("Tel Aviv","10/29/2022","10/30/2022");
+        app.getSearch().searchCurrentMonth2("Tel Aviv","10/31/2022","10/31/2022");
         app.getSearch().submit();
         Assert.assertTrue(app.getSearch().isListOfCarsAppeared());
     }
 
-    @Test
+    @Test (groups = {"smoke"})
     public void searchNextMonthSuccess(){
         app.getSearch().searchNextMonth("Jerusalem Israel","11/25/2022","11/30/2022");
        // app.getSearch().searchNextMonth("Tel Aviv","11-25-22","11/30/2022");

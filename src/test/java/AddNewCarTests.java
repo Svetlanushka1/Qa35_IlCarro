@@ -24,7 +24,7 @@ public class AddNewCarTests extends TestBase{
 
 
         Random random = new Random();
-        int i = random.nextInt(1000)+100;
+        int i = random.nextInt(1000)+1000;
 
         Car car = Car.builder()
                 .location("Haifa, Israel")
