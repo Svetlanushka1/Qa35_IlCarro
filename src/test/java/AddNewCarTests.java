@@ -39,7 +39,7 @@ public class AddNewCarTests extends TestBase{
                 .seats("4")
                 .clasS("C")
                 .fuelConsumption("6.5")
-                .carRegistrationNumber("11-000-"+i)
+                .carRegistrationNumber("12-987-"+i)
                 .price("65")
                 .distanceIncluded("800")
                 .features("Type of features")
